@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Animação no Canvas</title>
+    <script type="text/javascript" src="./scripts.js"></script>
+  </head>
+  <body onload="Iniciar()">
+    <!-- Objetos usados para a animação  -->
+    <img id="imgBon1" src="./imgs/chara-1.png" style="display: none;" />
+    <img id="imgBon2" src="./imgs/chara-2.png" style="display: none;" />
+    <img id="imgBon3" src="./imgs/chara-3.png" style="display: none;" />
+
+    <!-- canvas da animação -->
+    <canvas
+      id="bonecoCanvas"
+      width="300px"
+      height="300px"
+      style="border: 1px solid black;"
+    ></canvas>
+
+    <!-- botao para iniciar e parar -->
+    <div>
+      <form>
+        <input
+          type="button"
+          onclick="IniciaVoltas()"
+          value="Iniciar"
+          id="btnP"
+          name="btnP"
+        />
+      </form>
+    </div>
+
+    <!-- div para mostrar a quantidade de voltas -->
+    <div>
+      <h1>Quantidade de voltas: <span id="voltas"> </span></h1>
+    </div>
+  </body>
+</html>
